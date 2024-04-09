@@ -27,4 +27,4 @@ def test_cake4(eggs, flour, sugar, butter, eggs_per_cake, flour_per_cake, butter
     assert actual * flour_per_cake <= flour, f"cake4 returned {actual}, which needs too much flour"
     assert actual * butter_per_cake <= butter, f"cake4 returned {actual}, which needs too many butter"
     assert actual * sugar_per_cake <= sugar, f"cake4 returned {actual}, which needs too many sugar"
-    assert (actual + 1) * eggs_per_cake > eggs or (actual + 1) * flour_per_cake > flour or (actual + 1) * butter_per_cake > butter or (actual + 1) * sugar_per_cake > sugar, f"cake4 underestimates the number of bakeable cakes"
+    assert (actual + 1) * eggs_per_cake > eggs or (actual + 1) * flour_per_cake > flour or (actual + 1) * butter_per_cake > butter or (actual + 1) * sugar_per_cake > sugar, "cake4 underestimates the number of bakeable cakes"
